@@ -11,8 +11,8 @@ Features:
  * Gives a base app with a lot of stuff used in dbo apps already there.
  * Provides simple virtual interfaces to speed up compile time, for example to get the dbSession:
      
-    # include <wp2/iDB>
-    Wt::Dbo::Session& db = wp2::iDB::dbInstance();
+    # include <wp2/db.hpp>
+    Wt::Dbo::Session& db = wp2::db();
     
  * Ties together common controls, such as a label and a form widget, gives a choice of layout methods. For example:
 
