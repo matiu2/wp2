@@ -1,6 +1,6 @@
 project(wp2)
 
-add_library(${PROJECT_NAME} SHARED db.cpp)
+add_library(${PROJECT_NAME} SHARED db.cpp LabelWidgetPair.cpp)
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
     ${Boost_THREAD_LIBRARY}
     ${Boost_SYSTEM_LIBRARY} ${Boost_PROGRAM_OPTIONS_LIBRARY} ${Boost_SIGNALS_LIBRARY}
@@ -9,4 +9,4 @@ TARGET_LINK_LIBRARIES(${PROJECT_NAME}
 )
 
 install(TARGETS ${PROJECT_NAME} LIBRARY DESTINATION lib)
-install(FILES BaseApp.hpp db.hpp DESTINATION include/wp2)
+install(FILES BaseApp.hpp db.hpp LabelWidgetPair.hpp DESTINATION include/wp2)

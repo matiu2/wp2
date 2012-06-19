@@ -13,17 +13,17 @@ namespace wp2 {
   */
 class BaseApp : public Wt::WApplication {
 private:
-    Wt::Dbo::Session _db;
+    Wt::Dbo::Session _dbSession;
     Wt::Dbo::backend::Postgres _postgres;
 protected:
     /// Call this in your constructor before using db()
     void connectDB(const std::string& postgresConnectionString) {
         _postgres.connect(postgresConnectionString);
-        _db.setConnection(_postgres);
+        _dbSession.setConnection(_postgres);
     }
 public:
-    BaseApp(const Wt::WEnvironment& env) : Wt::WApplication(env), _db() {}
-    Wt::Dbo::Session& db() { return _db; }
+    BaseApp(const Wt::WEnvironment& env) : Wt::WApplication(env), _dbSession() {}
+    Wt::Dbo::Session& dbSession() { return _dbSession; }
 };
 
 } // namespace wp2
