@@ -1,5 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
 project(wp2)
-
+SET(CMAKE_CXX_FLAGS "${COMMON_FLAGS}  -std=gnu++0x")
+SET(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu99")
 add_library(${PROJECT_NAME} SHARED db.cpp LabelWidgetPair.cpp)
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
     ${Boost_THREAD_LIBRARY}
