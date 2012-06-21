@@ -1,20 +1,14 @@
-/*
- * =====================================================================================
- *
- *       Filename:  db.hpp
- *
- *    Description:  Include this if you need to use the DB
- *
- *        Version:  1.0
- *        Created:  06/08/11 06:45:55
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Matthew Sherborne (), msherborne@gmail.com
- *        Company:  
- *
- * =====================================================================================
- */
+/* /*! \file db.hpp
+* =====================================================================================
+* \brief Include this if you need to use the DB 
+* \author Matthew Sherborne (), msherborne@gmail.com
+* \version 1.0
+* \date   06/08/11 06:45:55
+*  \bug       None known to date
+*  \warning   Improper use can crash your application
+*  \copyright GNU Public License.
+* =====================================================================================*/
+
 
 #ifndef DB_HPP
 #define DB_HPP
