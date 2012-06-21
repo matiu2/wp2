@@ -1,3 +1,14 @@
+/* /*! \file BaseApp.hpp
+ * =====================================================================================
+ *      \brief this file is a header 
+ * with it self a brief documentation
+ * \author Matthew Sherborne (), msherborne@gmail.com
+* \version 0.1
+* \date 6 septembre 2007
+* *  \bug       None known to date
+ *  \warning   Improper use can crash your application
+ *  \copyright GNU Public License.
+* =====================================================================================*/
 #ifndef WP2_BASEAPP_HPP
 #define WP2_BASEAPP_HPP
 
